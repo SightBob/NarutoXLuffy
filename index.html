@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- link tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- link style css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- link fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CDN aos  css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- CDN aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body id="id-body">
+    <main class="relative w-full min-h-[130svh]"  id="main-top">
+
+      <div class="max-sm:hidden fixed top-[120px] right-[40px] z-[150] max-md:right-[20px]" id="naruto-about">
+        <img class="h-[419px] hidden-image" src="./img/luffygearone.png">
+      </div>
+
+      <div class="max-sm:hidden fixed top-[120px] right-[40px] z-[150] max-md:right-[20px]" id="naruto-comic">
+        <img class="h-[419px] hidden-image" src="./img/luffygeartwo.png">
+      </div>
+
+      <div class="max-sm:hidden fixed top-[120px] right-[40px] z-[150] max-md:right-[20px]" id="naruto-anime">
+        <img class="h-[419px] hidden-image" src="./img/luffygearthree.png">
+      </div>
+
+      <div class="max-sm:hidden fixed top-[120px] right-[40px] z-[150] max-md:right-[20px]" id="naruto-related">
+        <img class="h-[419px] hidden-image" src="./img/luffygearfour.png">
+      </div>
+
+      <div class="max-sm:hidden fixed top-[120px] right-[40px] z-[150] max-md:right-[20px]" id="naruto-social">
+        <img class="h-[419px] hidden-image" src="./img/luffygearfive.png">
+      </div>
+
+      <div class="max-sm:hidden fixed top-[120px] right-[40px] z-[150] max-md:right-[20px]" id="naruto-banner">
+        <img class="h-[419px] hidden-image" src="./img/luffygearfive.png">
+      </div>
+
+      <!-- logo -->
+      <div class="relative h-full box-container">
+        <div class="fixed z-[100] top-10">
+          <img
+            id="img-logo"
+            class="max-w-[300px] w-full max-sm:w-[120px] max-md:[160px]"
+            src="./img/logo_onepiece.png"
+            alt="One Piece Logo"
+          />
+        </div>
+      </div>
+
+      <!-- toggle menu -->
+      <div class="fixed z-[201] top-0 right-0 p-3 max-lg:p-0">
+        <div class="flex space-x-2 max-lg:space-x-1">
+          <div class="flex flex-col items-end space-y-4 max-lg:space-y-1">
+            <div
+              class="bg-black flex items-center text-white space-x-2 py-1 px-2 max-lg:px-0.5 max-lg:py-0 max-lg:mt-2"
+            >
+              <h2 class="text-[.9rem]">SHOW GLOBAL ARTICLES</h2>
+              <input class="size-4 outline-none rounded-sm" type="checkbox" />
+            </div>
+            <select
+              class="bg-black text-white py-2 max-lg:py-1 rounded-full text-center"
+            >
+              <option value="1" selected>EN</option>
+              <option value="2">THAI</option>
+              <option value="3">JAPAN</option>
+              <option value="3">KOREAN</option>
+            </select>
+          </div>
+          <div id="nav-toggle">
+            <img
+              class="w-[5rem] lg:hover:scale-[1.3] max-lg:w-[4rem] transition-transform duration-300"
+              src="./img/menu.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- nav menu -->
+      <div class="bg-[url('./img/menu-bg.png')] fixed top-0 left-0 right-0 bottom-0 xl:bg-cover bg-no-repeat bg-top z-[200] nav__menu overflow-hidden" id="nav-menu" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="pt-[88px] pr-[65px] bg-blue flex justify-end ps-[5rem] max-lg:ps-[3rem] max-lg:pt-[50px] max-lg:justify-start">
+            <div class="flex space-x-[50px] max-lg:flex-col max-lg:space-x-0">
+              <!--  -->
+              <div class="">
+                <a href="#" class="text-white text-[2.5rem]">TOP</a>
+              </div>
+              <div class="">
+                <a href="#" class="text-white text-[2.5rem]">NEWS</a>
+              </div>
+              <div class="">
+
+                <div class="">
+                  <a href="#" class="text-white text-[2.5rem]">ABOUT LUFFY</a>
+                  <div class="flex max-lg:hidden">
+                    <div class="size-[16px] border-gray-400 border-l border-b"></div>
+                    <div class="text-[1.5rem] text-white ml-2">Story</div>
+                  </div>
+                </div>
+
+                <div class="mt-[2rem] max-lg:mt-0">
+                  <a href="#" class="text-white text-[2.5rem]">COMICS</a>
+                  <div class="flex flex-col max-lg:hidden">
+                    <!-- <div class="flex">
+                      <div class="size-[16px] border-gray-400 border-l border-b"></div>
+                    <div class="text-[1.5rem] text-white ml-2">ONE PIECE
+                      </div>
+                    </div> -->
+                  <div class="max-lg:hidden">
+                    <div class="flex"><div class="size-[16px] border-gray-400 border-l border-b"></div> <div class="text-[1.5rem] text-white ml-2">ONE PIECE  <br><p class="text-lg">-NEW WORLD SAGA-</p></div></div>
+                    <div class="flex"><div class="size-[16px] border-gray-400 border-l border-b"></div> <div class="text-[1.5rem] text-white ml-2">ONE PIECE <br><p class="text-lg">-WANO COUNTRY ARC-</p></div></div>
+                    <div class="flex"><div class="size-[16px] border-gray-400 border-l border-b"></div> <div class="text-[1.5rem] text-white ml-2">RELATED TITLES</div></div>
+                  </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="">
+
+                <div class="">
+                  <a href="#" class="text-white text-[2.5rem]">ANIME</a>
+                <div class="max-lg:hidden">
+                  <div class="flex">
+                    <div class="size-[16px] border-gray-400 border-l border-b"></div>
+                    <div class="text-[1.5rem] text-white ml-2">ONE PIECE</div>
+                  </div>
+                  <div class="flex">
+                    <div class="size-[16px] border-gray-400 border-l border-b"></div>
+                    <div class="text-[1.5rem] text-white ml-2">ONE PIECE MOVIES</div>
+                  </div>
+                  <div class="flex">
+                    <div class="size-[16px] border-gray-400 border-l border-b"></div>
+                    <div class="text-[1.5rem] text-white ml-2">ONE PIECE SPECIALS</div>
+                  </div>
+                </div>
+                </div>
+
+              <div class="flex mt-[2rem] space-x-2 max-lg:hidden">
+                <div class="flex">
+                  <div class="flex flex-col items-center">
+                      <div class="h-[25px] w-[12px] border-l border-t"></div>
+                      <div class="text-gray-400 related_items"><span class="text-xl py-3">RELATED ITEMS</span></div>
+                      <div class="h-[25px] w-[12px] border-l border-b"></div>
+                  </div>
+              </div>
+              
+                 <div class="flex flex-col justify-between items-center">
+                  <a href="#" class="text-[2.5rem] text-white">MERCH</a>
+                  <a href="#" class="text-[2.5rem] text-white">EVENTS</a>
+                  <a href="#" class="text-[2.5rem] text-white">GAMES</a>
+                 </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="">
+                <a href="#" class="text-white text-[2.5rem]">SPECIAL</a>
+                <div class="mt-[2rem] max-lg:hidden">
+                  <img src="./img/special_08.jpg" alt="">
+                </div>
+              </div>
+              
+              <div class="mt-[2rem] max-lg:hidden">
+                <a href="#" class="text-white text-[1.85rem]">CONTACT</a>
+              <div class="flex space-x-4 items-center mt-[1rem]">
+                <div class="text-white">
+                  <p>share</p>
+                </div>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter text-xl text-white"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram text-xl text-white"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube text-xl text-white"></i>
+                </a>
+              </div>
+              </div>
+            </div>
+
+            
+          </div>
+          
+        </div>
+       <div class="max-w-[90%] mx-auto lg:hidden">
+        <div class="flex items-center justify-center w-full">
+          <div class="w-[100%] h-[18px] border-t border-l"></div>
+          <div class="w-[300px] text-2xl text-gray-500 text-center"><span>RELATED ITEMS</span></div>
+          <div class="w-[100%] h-[18px] border-t border-r"></div>
+        </div>
+        <div class="text-white text-4xl flex justify-between mt-5">
+          <a href="#">MERCH</a>
+          <a href="#">EVENTS</a>
+          <a href="#">GAMES</a>
+        </div>
+        <div class="flex flex-col items-center justify-center text-white space-y-4">
+         <h3 class="text-xl">SHARE</h3>
+         <div class="flex justify-center space-x-3 flex-wrap">
+           <a href="#">
+             <i class="fa-brands fa-x-twitter text-xl text-white"></i>
+           </a>
+           <a href="#">
+             <i class="fa-brands fa-instagram text-xl text-white"></i>
+           </a>
+           <a href="#">
+             <i class="fa-brands fa-youtube text-xl text-white"></i>
+           </a>
+         </div>
+        </div>
+       </div>
+        </div>
+
+      <!-- share social -->
+      <div class="fixed z-[100] bottom-5 left-3 flex flex-col items-start space-y-1 max-md:hidden">
+        <div class="rotate-90 text-start translate-x-[-.5rem] text-white">
+          <p>share</p>
+        </div>
+        <a href="#">
+          <i class="fa-brands fa-x-twitter size-[1rem] text-white"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram size-[1rem] text-white"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-youtube size-[1rem] text-white"></i>
+        </a>
+      </div>
+
+      <!-- to top -->
+      <div class="fixed z-[100] bottom-5 right-5 space-y-1 flex flex-col items-center max-md:hidden">
+        <a href="#main-top" class="flex flex-col items-center">
+          <img class="w-[5rem]" src="/img/to-top.jpg" />
+          <p>Page Top</p>
+        </a>
+      </div>
+
+      <!-- background blue -->
+      <div class="absolute w-full h-full z-[-5] bg-[#00C2FE]"></div>
+
+      <!-- boat and sea -->
+      <div class="absolute w-full z-[20] bg-cover bg-center bg-no-repeat top-0 left-0 right-0 bottom-0 bg-[url('/img/bg-sea-1-transformed.png')]"></div>
+
+      <!-- luffy main -->
+      <div class="absolute z-[60] left-0 right-0 bottom-[-4rem] w-full h-full flex justify-center">
+        <img
+          class="w-[34rem] max-md:w-[24rem] object-contain"
+          src="./img/file.png"
+          alt=""/>
+      </div>
+
+      <!-- cloud -->
+      <div class="bg-[url('./img/bg-cloud-1.png')] bg-cloud absolute bg-repeat-x bottom-10 left-0 right-0 bg-cover z-[10] w-full h-full"></div>
+      <!-- banner -->
+      <div class="absolute z-[65] bottom-[13rem] right-5 cursor-pointer max-md:right-3">
+        <img
+          class="w-[20rem] max-md:w-[15rem] max-sm:w-[10rem]"
+          src="./img/banner-fixed.jpg"
+          alt=""
+        />
+      </div>
+
+      <!-- content1 -->
+       <div class="z-[50] content_1 absolute h-[100vh] top-[100vh] left-0 right-0"></div>
+
+        <div class="z-[70] absolute top-[100vh] left-16 max-lg:left-0 max-sm:left-[-3rem] flex justify-start">
+          <img
+            class="object-contain w-[30rem]"
+            src="./img/new-title.png" alt="" />
+        </div>
+
+        <div class="z-[70] absolute top-[125vh] left-0 right-0 bg-[#D53633]">
+          <!-- Swiper -->
+          <div
+            class="swiper1 mySwiper ps-[12rem] max-lg:hidden overflow-x-hidden"
+            data-aos="fade-right"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide relative cursor-pointer">
+                <div class="flex absolute top-0 left-0">
+                  <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                  <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+                </div>
+                <div class="">
+                  <img
+                    class="object-cover h-[140px]"
+                    src="./img/img_news/1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="bg-white p-3">
+                  <p>07/12/2024</p>
+                  <h3 class="font-sans text-xs">
+                    The Jiraiya Figure from the Great Ninja Figure War Contest
+                    Bursts Onto the Stage! Find Out Sculptor Shintaro
+                  </h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide relative cursor-pointer">
+                <div class="flex absolute top-0 left-0">
+                  <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                  <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+                </div>
+                <div class="">
+                  <img
+                    class="object-cover h-[140px] w-full"
+                    src="./img/img_news/2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="bg-white p-3">
+                  <p>07/12/2024</p>
+                  <h3 class="font-sans text-xs">
+                    The Jiraiya Figure from the Great Ninja Figure War Contest
+                    Bursts Onto the Stage! Find Out Sculptor Shintaro
+                  </h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide relative cursor-pointer">
+                <div class="flex absolute top-0 left-0">
+                  <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                  <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+                </div>
+                <div class="">
+                  <img
+                    class="object-cover h-[140px] w-full"
+                    src="./img/img_news/3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="bg-white p-3">
+                  <p>07/12/2024</p>
+                  <h3 class="font-sans text-xs">
+                    The Jiraiya Figure from the Great Ninja Figure War Contest
+                    Bursts Onto the Stage! Find Out Sculptor Shintaro
+                  </h3>
+                </div>
+              </div>
+              <div class="swiper-slide relative cursor-pointer">
+                <div class="flex absolute top-0 left-0">
+                  <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                  <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+                </div>
+                <div class="">
+                  <img
+                    class="object-cover h-[140px] w-full"
+                    src="./img/img_news/4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="bg-white p-3">
+                  <p>07/12/2024</p>
+                  <h3 class="font-sans text-xs">
+                    The Jiraiya Figure from the Great Ninja Figure War Contest
+                    Bursts Onto the Stage! Find Out Sculptor Shintaro
+                  </h3>
+                </div>
+              </div>
+              <div class="swiper-slide relative cursor-pointer">
+                <div class="flex absolute top-0 left-0">
+                  <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                  <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+                </div>
+                <div class="">
+                  <img
+                    class="object-cover h-[140px] w-full"
+                    src="./img/img_news/5.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="bg-white p-3">
+                  <p>07/12/2024</p>
+                  <h3 class="font-sans text-xs">
+                    The Jiraiya Figure from the Great Ninja Figure War Contest
+                    Bursts Onto the Stage! Find Out Sculptor Shintaro
+                  </h3>
+                </div>
+              </div>
+              <div class="swiper-slide relative cursor-pointer">
+                <div class="flex absolute top-0 left-0">
+                  <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                  <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+                </div>
+                <div class="">
+                  <img
+                    class="object-cover h-[140px] w-full"
+                    src="./img/img_news/6.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="bg-white p-3">
+                  <p>07/12/2024</p>
+                  <h3 class="font-sans text-xs">
+                    The Jiraiya Figure from the Great Ninja Figure War Contest
+                    Bursts Onto the Stage! Find Out Sculptor Shintaro
+                  </h3>
+                </div>
+              </div>
+              <div class="swiper-slide relative cursor-pointer">
+                <div class="flex absolute top-0 left-0">
+                  <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                  <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+                </div>
+                <div class="">
+                  <img
+                    class="object-cover h-[140px] w-full"
+                    src="./img/img_news/7.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="bg-white p-3">
+                  <p>07/12/2024</p>
+                  <h3 class="font-sans text-xs">
+                    The Jiraiya Figure from the Great Ninja Figure War Contest
+                    Bursts Onto the Stage! Find Out Sculptor Shintaro
+                  </h3>
+                </div>
+              </div>
+              <div class="swiper-slide relative cursor-pointer">
+                <div class="flex absolute top-0 left-0">
+                  <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                  <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+                </div>
+                <div class="">
+                  <img
+                    class="object-cover h-[140px] w-full"
+                    src="./img/img_news/8.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="bg-white p-3">
+                  <p>07/12/2024</p>
+                  <h3 class="font-sans text-xs">
+                    The Jiraiya Figure from the Great Ninja Figure War Contest
+                    Bursts Onto the Stage! Find Out Sculptor Shintaro
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- content column 1 -->
+
+          <div class="px-10 max-sm:px-5 lg:hidden space-y-4" data-aos="fade-up">
+            <div
+              class="flex justify-between bg-white relative flex-1 border border-black"
+            >
+              <div class="absolute top-0 left-0 flex">
+                <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+              </div>
+              <div
+                class="bg-[#F3F3F3] min-w-[12rem] w-[12rem] max-md:min-w-[8rem]"
+              >
+                <img
+                  class="object-cover h-[180px] w-full py-10"
+                  src="./img/img_news/1.png"
+                  alt=""
+                />
+              </div>
+              <div class="py-3 pl-5 max-md:px-1.5 max-md:py-1.5">
+                <p>07/12/2024</p>
+                <h3
+                  class="font-sans text-[.975rem] font-medium max-md:line-clamp-5 max-md:text-sm"
+                >
+                  The Jiraiya Figure from the Great Ninja Figure War Contest
+                  Bursts Onto the Stage! Find Out Sculptor Shintaro Egashira's
+                  "Figure-Sculpting Way"!
+                </h3>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-between bg-white relative flex-1 border border-black"
+            >
+              <div class="absolute top-0 left-0 flex">
+                <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+              </div>
+              <div
+                class="bg-[#F3F3F3] min-w-[12rem] w-[12rem] max-md:min-w-[8rem]"
+              >
+                <img
+                  class="object-cover h-[180px] w-full py-10"
+                  src="./img/img_news/2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="py-3 pl-5 max-md:px-1.5 max-md:py-1.5">
+                <p>07/12/2024</p>
+                <h3
+                  class="font-sans text-[.975rem] font-medium max-md:line-clamp-5 max-md:text-sm"
+                >
+                  The Jiraiya Figure from the Great Ninja Figure War Contest
+                  Bursts Onto the Stage! Find Out Sculptor Shintaro Egashira's
+                  "Figure-Sculpting Way"!
+                </h3>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-between bg-white relative flex-1 border border-black"
+            >
+              <div class="absolute top-0 left-0 flex">
+                <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+              </div>
+              <div
+                class="bg-[#F3F3F3] min-w-[12rem] w-[12rem] max-md:min-w-[8rem]"
+              >
+                <img
+                  class="object-cover h-[180px] w-full py-10"
+                  src="./img/img_news/3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="py-3 pl-5 max-md:px-1.5 max-md:py-1.5">
+                <p>07/12/2024</p>
+                <h3
+                  class="font-sans text-[.975rem] font-medium max-md:line-clamp-5 max-md:text-sm"
+                >
+                  The Jiraiya Figure from the Great Ninja Figure War Contest
+                  Bursts Onto the Stage! Find Out Sculptor Shintaro Egashira's
+                  "Figure-Sculpting Way"!
+                </h3>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-between bg-white relative flex-1 border border-black"
+            >
+              <div class="absolute top-0 left-0 flex">
+                <div class="py-.5 px-2 bg-yellow-300 text-black">New</div>
+                <div class="pt-.5 px-2 bg-black text-yellow-300">March</div>
+              </div>
+              <div
+                class="bg-[#F3F3F3] min-w-[12rem] w-[12rem] max-md:min-w-[8rem]"
+              >
+                <img
+                  class="object-cover h-[180px] w-full py-10"
+                  src="./img/img_news/4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="py-3 pl-5 max-md:px-1.5 max-md:py-1.5">
+                <p>07/12/2024</p>
+                <h3
+                  class="font-sans text-[.975rem] font-medium max-md:line-clamp-5 max-md:text-sm"
+                >
+                  The Jiraiya Figure from the Great Ninja Figure War Contest
+                  Bursts Onto the Stage! Find Out Sculptor Shintaro Egashira's
+                  "Figure-Sculpting Way"!
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- button slide -->
+          <div class="flex justify-between px-48 max-lg:px-10 max-sm:px-6 max-lg:mt-4 items-end bg-[#D53633]">
+            <div class="border-2 border-black py-1 px-10 cursor-pointer bg-white text-black">
+              <p class="text-2xl cursor-pointer">SEE MORE</p>
+            </div>
+            <div class="flex mt-5 justify-end space-x-5 max-lg:hidden mr-20">
+              <div class="cursor-pointer swiper-cursor-next px-4 border-2 border-black flex justify-center items-center swiper-button-prev custom-hover"></div>
+              <div class="cursor-pointer swiper-cursor-prev px-4 border-2 border-black flex justify-center items-center swiper-button-next custom-hover"></div>
+            </div>
+          </div>
+
+
+           <!-- content column 2 -->
+          <!-- swiper 2 -->
+          <div class="bg-[#D53633] py-[4rem] max-w-[1300px] w-full mx-auto overflow-x-hidden">
+            <div class="swiper2 mySwiper2 relative">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide flex justify-center">
+                  <img
+                    class="min-h-[10rem] object-cover object-left"
+                    src="./img/banner-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide flex justify-center">
+                  <img
+                    class="min-h-[10rem] object-cover object-left"
+                    src="./img/banner-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide flex justify-center">
+                  <img
+                    class="min-h-[10rem] object-cover object-left"
+                    src="./img/banner-3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide flex justify-center">
+                  <img
+                    class="min-h-[10rem] object-cover object-left"
+                    src="./img/banner-4.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+            </div>
+
+          </div>
+          
+          
+           <!-- content column 3 -->
+          <!-- title about -->
+          <div class="bg-[#D53633] max-w-[1280px] mx-auto max-md:w-[95%] overflow-x-hidden" id="about-page">
+
+            
+            <div class="relative z-[2] uppercase border-4 border-black max-w-[650px] py-[1.25rem] mx-auto max-md:w-[95%]">
+              <h2 class=" tracking-wide text-6xl text-center">about luffy</h2>
+            </div>
+            <div class="relative pt-[5rem] h-[180vh] overflow-hidden">
+
+                <div class="sm:hidden absolute top-0 right-[0px] z-[11]">
+                  <img class="h-[250px]" src="./img/luffygearone.png" alt="">
+                </div>
+
+                <div class="bg-[url('./img/about-2.png')] bg-no-repeat bg-cover absolute top-[5rem] left-[-5rem] bottom-0 right-0"></div>
+                
+                <div class="bg-[url('./img/story-title.png')] z-[10] bg-no-repeat bg-contain h-[10rem] absolute top-[3rem] left-10 max-md:left-[-3rem] bottom-0 right-0"  data-aos="fade-right" data-aos-delay="600"></div>
+                
+                <div class="bg-white cursor-pointer p-10 pe-40 absolute top-[40vh] left-[5rem] max-md:p-6 max-md:pe-24 max-md:left-0 max-sm:pe-12"  data-aos="fade-up" data-aos-delay="500">
+                  <div class="relative">
+                    <div class="w-[20rem] max-md:w-[11rem]">
+                      <h2 class="text-5xl">NARUTO</h2>
+                      <p class="text-2xl max-md:text-lg">From its debut in 1999, all the way to 
+                        its stunning conclusion—
+                        look back on the trials and 
+                        tribulations of an outcast
+                        ninja’s coming of age and the famous 
+                        scenes that shaped his story!!</p>
+                        <div class="border-2 border-black w-fit px-4 py-0.5 flex space-x-2 items-center mt-4">
+                          <h3 class="text-2xl">MORE INFO</h3>
+                          <img class="size-6" src="./img/more-button.png">
+                        </div>
+                    </div>
+                    <div class="absolute right-[-16rem] bottom-[-2.5rem] max-md:bottom-[-1.5rem] max-md:right-[-11rem]">
+                      <img class="h-[18rem] object-contain max-md:h-[14rem]" src="./img/story-luffy-1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="bg-white cursor-pointer p-8 pe-28 absolute top-[105vh] left-[5rem] max-md:p-4 max-md:pe-0 max-md:right-0 max-sm:pe-0 max-md:top-[110vh] max-md:left-auto"  data-aos="fade-up" data-aos-delay="500">
+                  <div class="relative">
+                    <div class="flex items-center space-x-2 max-md:flex-col max-md:items-start">
+                      <h2 class="text-5xl">BORUTO</h2>
+                      <h3 class="text-2xl">-NARUTO NEXT GENERATIONS-</h3>
+                    </div>
+                    <div class="w-[18rem] max-md:w-[13rem]">
+                      <p class="text-2xl max-md:text-lg">
+                        The story of a young boy who 
+                        dreams of becoming Hokage is 
+                        passed on to a new generation!
+                        See how the world of NARUTO 
+                        has changed over the years!!
+                      </p>
+                        <div class="border-2 border-black w-fit px-4 py-0.5 flex space-x-2 items-center mt-4">
+                          <h3 class="text-2xl">MORE INFO</h3>
+                          <img class="size-6" src="./img/more-button.png">
+                        </div>
+                    </div>
+                    <div class="absolute right-[-10rem] bottom-[-2.5rem] max-md:right-auto max-md:left-[-14rem] ">
+                      <img class="h-[24rem] object-contain" src="./img/story-luffy-2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- content column 4 -->
+            <!-- comics -->
+            <div class="relative h-[100vh] max-md:h-[40vh] top-[-20vh] z-[20]">
+              <div class="bg-fade-1 max-md:bg-cover bg-[url('./img/fade-1.png')]" data-aos="clip-path" data-aos-delay="700"></div>
+            </div>
+
+            <div class="h-[200vh] relative border top-[-45vh] overflow-x-hidden" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" id="comics-page">
+   
+              
+              <div class="absolute bg-[url('./img/bg-content-2.jpg')] bg-cover bg-no-repeat top-0 left-0 right-0 bottom-0">
+                
+                
+                <div class="max-w-[1300px] h-full max-md:w-[95%] w-full mx-auto relative left-0 right-0 top-0 bottom-0 pt-[15rem] overflow-x-hidden">
+                  
+                  <!-- <div class="sm:hidden absolute top-[120px] max-sm:top-[100px] right-[40px] max-sm:right-[-10px] max-sm:z-[9] z-[2000] sm:translate-x-0 max-md:right-[15px]" id="naruto-comic">
+                    <img class="h-[419px] max-sm:h-[380px] sm:translate-x-[150%]" src="./img/naruto-comic.png" alt="">
+                  </div> -->
+
+                  <div class="sm:hidden absolute top-[130px] right-[0px] z-[11]">
+                    <img class="h-[250px]" src="./img/luffygeartwo.png" alt="">
+                  </div>
+                
+                <img class="h-[10rem] object-contain ml-[5rem] max-md:ml-[-2rem] relative z-[10]" src="./img/comics-title.png" alt="" data-aos="fade-right" >
+
+                  <div class="flex justify-center">
+                      <div class="relative">
+                        <img class="size-[30rem] object-cover object-top mt-[2rem] " src="./img/comics-main-1.jpg" alt="" data-aos="zoom-in">
+
+                            <div class="absolute bottom-[-5rem] left-[-5rem] max-md:left-0 size-[12rem] max-md:size-[10rem] bg-black rounded-full overflow-hidden text-white flex flex-col justify-around text-center" data-aos="fade-up">
+                              <h3 class="text-xl max-md:text-lg">QUIZ</h3>
+                              <h2 class="text-3xl max-md:text-xl">Which volume’s <br> cover is this?</h2>
+                              <h4 class="text-xl max-md:text-lg">SEE ANSWER</h4>
+                            </div>
+                            <div class="bg-white border absolute bottom-[-9rem] cursor-pointer left-[-5rem] max-md:translate-x-[-50%] max-md:left-[50%] border-black px-4 py-.5 w-fit max-md:w-[80%] max-md:text-center mt-[3rem]">
+                              <h3 class="text-2xl">MORE INFO ON THE COMICS</h3>
+                            </div>
+                      </div>
+                  </div>
+
+                </div>
+              </div>
+              </div>
+
+            <!-- content column 5 -->
+            <!-- anime -->
+              <div class="relative h-[100vh] max-md:h-[50vh] max-md:top-[-70vh] z-[101] top-[-75vh]">
+                <div class="bg-fade-2 bg-[url('./img/fade-2.png')] max-md:bg-cover" data-aos="clip-path" data-aos-delay="700"></div>
+              </div>
+
+              <div class="relative top-[-105vh]" id="anime-page">
+
+                <div class="sm:hidden absolute top-[200px] right-[5px] z-[11]">
+                  <img class="h-[250px]" src="./img/luffygearthree.png" alt="">
+                </div>
+
+                <video autoplay muted loop id="myVideo" class="object-cover sticky top-0 left-0 right-0 bottom-0 min-w-[100%] min-h-[250vh] max-lg:min-h-[180vh] max-sm:min-h-[235vh]">
+                  <source src="./img/onepiece-video.mp4" type="video/mp4">
+                </video>
+               <div class="bg-[url('./img/story-title.png')] bg-no-repeat bg-contain h-[10rem] max-md:h-[8rem] z-[10] absolute top-[40vh] left-10 max-md:left-[-3rem] bottom-0 right-0"></div>
+                <div class="absolute top-0 right-0 left-0 bottom-0 max-w-[1280px] pt-[70vh] max-md:w-[95%] mx-auto px-[85px] max-md:px-[10px]">
+                 <div class="max-w-[700px] ">
+                  
+                  <div class="flex flex-wrap gap-y-6 gap-x-8">
+                    <div class="">
+                      <img class="w-[230px] h-[300px] object-cover max-lg:hidden" src="./img/anime-content-1.jpg">
+                    <div class="bg-white w-[230px] p-3 max-md:py-10 max-sm:w-full max-sm:flex-1">
+                     <img class="w-[10rem] max-sm:w-full mx-auto" src="https://logos-world.net/wp-content/uploads/2021/09/One-Piece-Logo.png" alt="">
+                    </div>
+                    </div>
+                   <div class="">
+                      <img class="w-[230px] h-[300px] object-cover max-lg:hidden" src="./img/anime-content-2.jpg">
+                    <div class="bg-white w-[230px] p-3 max-md:py-10 max-sm:w-full max-sm:flex-1">
+                     <img class="w-[10rem] max-sm:w-full mx-auto" src="https://logos-world.net/wp-content/uploads/2021/09/One-Piece-Logo.png" alt="">
+                    </div>
+                    </div>
+                   <div class="">
+                      <img class="w-[230px] h-[300px] object-cover max-lg:hidden" src="./img/anime-content-3.jpg">
+                    <div class="bg-white w-[230px] p-3 max-md:py-10 max-sm:w-full max-sm:flex-1">
+                     <img class="w-[10rem] max-sm:w-full mx-auto" src="https://logos-world.net/wp-content/uploads/2021/09/One-Piece-Logo.png" alt="">
+                    </div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-white px-8 py-2 w-fit border-2 border-black mt-[2rem] max-md:mx-auto cursor-pointer">
+                    <h3 class="text-2xl text-center">MORE INFO ON THE ANIME</h3>
+                  </div>
+
+                 </div>
+                </div>
+             </div>
+
+            <!-- content column 6 -->
+            <!--  -->
+              <div class="relative h-[100vh] max-md:h-[50vh] z-[101] top-[-140vh]">
+                <div class="bg-fade-1 bg-[url('./img/fade-3.png')] max-md:bg-cover" data-aos="clip-path" data-aos-delay="700"></div>
+              </div>
+
+              <div class="relative top-[-150vh] h-[120vh] max-md:top-[-165vh]" id="related-page">
+
+                <div class="sm:hidden absolute top-[160px] right-[5px] z-[11]">
+                  <img class="h-[250px]" src="./img/luffygearfour.png" alt="">
+                </div>
+
+              <div class="bg-[url('./img/story-title.png')] bg-no-repeat bg-contain h-[10rem] max-md:h-[8rem] absolute top-[40vh] left-10 max-md:left-[-3rem] bottom-0 right-0"  data-aos="fade-right" data-aos-delay="600"></div>
+                <div class="absolute top-0 right-0 left-0 bottom-0 max-w-[1280px] pt-[70vh] max-md:w-[95%] mx-auto px-[85px] max-md:px-[10px]">
+                 <div class="max-w-[750px] max-lg:max-w-[570px]">
+                  
+                  <div class="flex max-lg:flex-col flex-wrap gap-y-6 gap-x-8">
+                   
+                    <div class="w-[213px] space-y-3 max-lg:w-full" data-aos="fade-up"  data-aos-duration="800">
+                    <div class="bg-black p-2">
+                      <h3 class="text-white font-bold text-3xl tracking-wide">MERCH</h3>
+                    </div>
+                    <div class="bg-white max-lg:flex">
+                      <div class="bg-white">
+                        <img class="aspect-square object-cover max-lg:w-[10rem]" src="./img/figure-1.png" alt="">
+                      </div>
+                      <div class="p-5 max-lg:flex max-lg:flex-col-reverse max-lg:justify-between max-lg:p-3">
+                        <div class="flex gap-2">
+                          <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        </div>
+                        <div class="mt-2">
+                          <p class="font-sans text-sm line-clamp-2">
+                            Portrait.Of.Pirates One Piece "WA-MAXIMUM" Beasts Pirates All-Star "King the Wildfire"</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-white py-1 border-2 border-black w-full max-lg:w-fit cursor-pointer">
+                      <h3 class=" text-2xl px-2 tracking-wide">MORE INFO ON MERCH</h3>
+                    </div>
+                   </div>
+                   
+                    <div class="w-[213px] space-y-3 max-lg:w-full" data-aos="fade-up"  data-aos-duration="1200">
+                    <div class="bg-black p-2">
+                      <h3 class="text-white font-bold text-3xl tracking-wide">MERCH</h3>
+                    </div>
+                    <div class="bg-white max-lg:flex">
+                      <div class="bg-white">
+                        <img class="aspect-square object-cover max-lg:w-[10rem]" src="./img/figure-2.png" alt="">
+                      </div>
+                      <div class="p-5 max-lg:flex max-lg:flex-col-reverse max-lg:justify-between max-lg:p-3">
+                        <div class="flex gap-2">
+                          <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        </div>
+                        <div class="mt-2">
+                          <p class="font-sans text-sm line-clamp-2">World Collectable Figure × S.H.Figuarts Monkey D. Luffy (Tamashii Web Shop Ver.)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-white py-1 border-2 border-black w-full max-lg:w-fit cursor-pointer">
+                      <h3 class=" text-2xl px-2 tracking-wide">MORE INFO ON MERCH</h3>
+                    </div>
+                   </div>
+                   
+                    <div class="w-[213px] space-y-3 max-lg:w-full" data-aos="fade-up"  data-aos-duration="1600">
+                    <div class="bg-black p-2">
+                      <h3 class="text-white font-bold text-3xl tracking-wide">MERCH</h3>
+                    </div>
+                    <div class="bg-white max-lg:flex">
+                      <div class="bg-white">
+                        <img class="aspect-square object-cover max-lg:w-[10rem]" src="./img/figure-3.png" alt="">
+                      </div>
+                      <div class="p-5 max-lg:flex max-lg:flex-col-reverse max-lg:justify-between max-lg:p-3">
+                        <div class="flex gap-2">
+                          <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        <div class="bg-gray-200 w-fit px-2 py-.5"><h4>TOY</h4></div>
+                        </div>
+                        <div class="mt-2">
+                          <p class="font-sans text-sm line-clamp-2">One Piece World Collectable Figure PREMIUM - Monkey D. Luffy SPECIAL</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-white py-1 border-2 border-black w-full max-lg:w-fit cursor-pointer">
+                      <h3 class=" text-2xl px-2 tracking-wide">MORE INFO ON MERCH</h3>
+                    </div>
+                   </div>
+
+                  
+                  </div>
+
+
+                 </div>
+                </div>
+             </div>
+
+
+            <!-- content column 6 -->
+            <!--  -->
+              <div class="relative h-[100vh] max-md:h-[50vh] z-[101] top-[-120vh] max-lg:top-[-50vh] max-md:top-[-65vh] max-[450px]:top-[-70vh]">
+                <div class="bg-fade-2 bg-[url('./img/fade-4.png')] max-md:bg-cover" data-aos="clip-path" data-aos-delay="700"></div>
+              </div>
+
+              <div class="relative top-[-140vh] max-lg:pb-[35rem] pb-[10rem] max-lg max-lg:text-center max max-lg:top-[-90vh]" id="social-page">
+              
+                <div class="sm:hidden absolute top-[160px] right-[5px] z-[11]">
+                  <img class="h-[250px]" src="./img/luffygearfive.png" alt="">
+                </div>
+
+                <div class="bg-[url('./img/story-title.png')] bg-no-repeat bg-contain h-[10rem] max-md:h-[8rem] absolute top-[40vh] left-10 max-md:left-[-3rem] bottom-0 right-0"  data-aos="fade-right" data-aos-delay="600"></div>
+                <div class="absolute top-0 right-0 left-0 bottom-0 max-w-[1280px] pt-[70vh] max-md:w-[95%] mx-auto px-[85px] max-md:px-[10px]">
+                 <div class="max-w-[750px] max-lg:max-w-[570px]">
+                  <div class="max-w-[520px] h-[300px] overflow-y-scroll border bg-white rounded-lg">
+                    <div class="flex justify-end">
+                      <div class="w-[80%] h-[300px] overflow-hidden">
+                        <img class="bg-cover" src="https://pbs.twimg.com/media/GS_SOgZawAAxgeM.png" alt="">
+                        <p>タイムテーブル更新👀 TVアニメ『#ONEPIECE』全話ライブ配信中！ 「ANYTIME ONE PIECE」ROUND13 ⬇️YouTube視聴はコチラから #いつでもワンピース</p>
+                      </div>
+                    </div>
+                    <div class="flex justify-end">
+                      <div class="w-[80%] h-[300px] overflow-hidden">
+                        <img class="bg-cover h-[60%] mx-auto" src="https://pbs.twimg.com/media/GS8Gy4RbIAQst6M.jpg" alt="">
+                        <p>タイムテーブル更新👀 TVアニメ『#ONEPIECE』全話ライブ配信中！ 「ANYTIME ONE PIECE」ROUND13 ⬇️YouTube視聴はコチラから #いつでもワンピース</p>
+                      </div>
+                    </div>
+                    <div class="flex justify-end">
+                      <div class="w-[80%] h-[300px] overflow-hidden">
+                        <img class="bg-cover h-[60%] mx-auto" src="https://pbs.twimg.com/media/GS-SdJCbIAUiAcJ.jpg" alt="">
+                        <p>タイムテーブル更新👀 TVアニメ『#ONEPIECE』全話ライブ配信中！ 「ANYTIME ONE PIECE」ROUND13 ⬇️YouTube視聴はコチラから #いつでもワンピース</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                  <div class="bg-white px-8 py-2 w-fit border-2 border-black mt-[2rem] max-md:mx-auto cursor-pointer">
+                    <h3 class="text-2xl text-center">MORE INFO ON THE ANIME</h3>
+                  </div>
+
+                 </div>
+                </div>
+             </div>
+
+            <!-- content column 7 -->
+            <!--  -->
+             <div class="relative h-[100vh] max-md:h-[50vh] z-[101] top-[-35vh]" id="banner-page">
+              <div class="bg-fade-1 bg-[url('./img/fade-5.png')] max-md:bg-cover" data-aos="clip-path" data-aos-delay="700"></div>
+            </div>
+
+            <div class="relative top-[-80vh] h-[90vh] max-lg:h-[260vh] max-[400px]:h-[200vh]">
+              
+              <div class="sm:hidden absolute top-[180px] right-[5px] z-[-1]">
+                <img class="h-[250px]" src="./img/luffygearfive.png" alt="">
+              </div>
+
+              <div class="absolute top-0 right-0 left-0 bottom-0 max-w-[1280px] pt-[70vh] max-md:w-[95%] mx-auto px-[85px] max-md:px-[10px]">
+               <div class="max-w-[750px] max-lg:max-w-[570px] flex flex-wrap gap-6 max-lg:flex-nowrap max-lg:gap-y-[1.6rem] max-lg:flex-col">
+
+                <div class="">
+                  <img class="max-lg:max-w-full w-full" src="./img/special_01.jpg" alt="">
+                </div>
+                <div class="">
+                  <img class="max-lg:max-w-full w-full" src="./img/special_02.jpg" alt="">
+                </div>
+                <div class="">
+                  <img class="max-lg:max-w-full w-full" src="./img/special_03.jpg" alt="">
+                </div>
+                <div class="">
+                  <img class="max-lg:max-w-full w-full" src="./img/special_04.jpg" alt="">
+                </div>
+                <div class="">
+                  <img class="max-lg:max-w-full w-full" src="./img/special_05.jpg" alt="">
+                </div>
+                <div class="">
+                  <img class="max-lg:max-w-full w-full" src="./img/special_07.jpg" alt="">
+                </div>
+
+
+                <div class="max-w-[600px]">
+                  <p class="font-sans text-xs">This site includes machine-translated texts. Please be aware that you might find some unusual expressions that are difficult to understand.
+                    <br> Some information on this site may vary depending on your region. <br>
+                    The information on this site is up to date as of the time of publication.</p>
+                </div>
+              </div>
+              
+              <div class="md:hidden">
+                <div class="pt-[5rem]">
+                  <div class="flex flex-col justify-center items-center">
+                      <div class="text-black">
+                        <p class="text-2xl">share</p>
+                      </div>
+                      <div class="space-x-4">
+                        <a class="size" href="#">
+                          <i class="fa-brands fa-x-twitter text-white text-3xl"></i>
+                        </a>
+                        <a class="size" href="#">
+                          <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                        </a>
+                        <a class="size" href="#">
+                          <i class="fa-brands fa-youtube text-white text-3xl"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div  class="mt-[4rem]">
+                   <a href="#main-top" class="flex flex-col items-center">
+                    <img class="w-[6rem]" src="./img/to-top.jpg" alt="">
+                    <h3>PAGE TOP</h3>
+                   </a>
+                  </div>
+              </div>
+              </div>
+              </div>
+              
+
+
+              <!-- fotter -->
+              <footer class="bg-black text-white p-[3rem] py-[2rem] flex justify-between items-end max-lg:flex-col-reverse max-lg:items-center">
+                <div class="">
+                  <div class="flex justify-center space-x-8 max-lg:flex-col max-lg:items-center max-lg:mt-12 max-lg:space-y-5 max-lg:space-x-0">
+                    <img class="w-[10rem]" src="https://naruto-official.com/common/footer/shueisha_logo.svg" alt="">
+                    <img class="w-[8rem] object-cover" src="./img/toeiNetwork.png" alt="">
+                  </div>
+                  <div class="mt-4 space-y-1 max-lg:text-center">
+                    <p class="font-sans text-xs">©1997 by Eiichiro Oda/ SHUEISHA Inc.</p>
+                    <p class="font-sans text-xs">©2022 by Eiichiro Oda, Gosho Aoyama/ SHUEISHA Inc.</p>
+                    <p class="font-sans text-xs">©1997 EIICHIRO ODA</p>
+                    <p class="font-sans text-xs">©1997 EIICHIRO ODA / 2008 NEW WORLD All Rights Reserved.</p>
+                    <p class="font-sans text-xs">©1997 EIICHIRO ODA / 2019 WANO All Rights Reserved.</p>
+                  </div>
+                </div>    
+                <div class="flex text-xs max-lg:w-[300px] max-lg:flex-wrap max-lg:justify-center">
+                  <div class="max-lg:w-[40%] max-lg:text-center"><p class="font-sans">Terms and Conditions</p></div>
+                  <div class="h-[13px] mx-[28px] border"></div>
+                  <div class="max-lg:w-[40%] max-lg:text-center"><p class=" font-sans">Privacy Policy</p></div>
+                  <div class="h-[13px] mx-[28px] border max-lg:hidden"></div>
+                  <div class="max-lg:mt-3"><p class=" font-sans">Contact Us</p></div>
+                </div>         
+              </footer>
+             
+            
+            </div>
+           </div>
+
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // First Swiper
+        const swiper1 = new Swiper(".mySwiper", {
+          slidesPerView: 4.3,
+          spaceBetween: 20,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+        
+        
+        var swiper2 = new Swiper(".mySwiper2", {
+          slidesPerView: 1.1,
+          spaceBetween: 10,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          },
+          centeredSlides: true,
+           // custom pagination
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              renderBullet: function (i, className) {
+                return `
+            <button class="${className}">
+            <svg class="progress" width="20" height="20"><circle class="circle-origin" r="9" cx="9.8" cy="9.5"></circle></svg>
+          </button>
+                `;
+              }
+            }
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
